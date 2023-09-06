@@ -26,7 +26,7 @@ export const ChildItem = ({ items }: any) => {
   
     return (
       <li style={{ minHeight: "25px", paddingLeft: "25px" }}>
-        <Link to={`/${items.content}`} onClick={() => setShow(!show)}>
+        <Link to={`/${items.content}`} target="_blank" onClick={() => setShow(!show)}>
           {items.content}
         </Link>
     </li>

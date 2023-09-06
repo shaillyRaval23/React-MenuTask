@@ -49,6 +49,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
       });
       setSearch("")
       setSuccess(true)
+      localStorage.setItem("dummyData", JSON.stringify(dummyArr))
       setData(dummyArr);
     } else {
       if (selectedItem.menu === undefined) {
@@ -62,6 +63,9 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
         id: "202",
       });
       setSelectedItem(selectedItem);
+      setSearch("")
+      setSuccess(true)
+      // localStorage.setItem("dummyData", JSON.stringify(selectedItem))
     }
   };
 
@@ -165,6 +169,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
                           onClick={() => {
                             setSelectedItem(el);
                             setShow(true);
+                            setSearch("")
                           }}
                           style={{ cursor: "pointer" }}
                         />

@@ -129,8 +129,10 @@ const dummyData = [
   },
 ];
 
+if(!JSON.parse(localStorage.getItem("dummyData") as any)) localStorage.setItem("dummyData", JSON.stringify(dummyData))
+
 function App() {
-  const [data, setData] = useState(dummyData);
+  const [data, setData] = useState( JSON.parse(localStorage.getItem('dummyData') as any) || dummyData);
   const [selectedItem, setSelectedItem] = useState<any>({});
 
   return (
