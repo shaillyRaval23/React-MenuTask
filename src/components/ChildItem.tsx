@@ -7,10 +7,11 @@ export const ChildItem = ({ items }: any) => {
     if (items?.menu?.items) {
       return (
         <li>
-          <div>
-              {show ? <TriangleDownIcon /> : <TriangleEndIcon />}
+          <div style={{display: 'flex', flexDirection: "column", alignItems: 'flex-start', justifyContent: 'center'}}>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', cursor: "pointer"}}>
+              {show ? <span style={{color: "#0d1187"}}><TriangleDownIcon /></span> : <span style={{color: "#0d1187"}}><TriangleEndIcon /></span>}
               <span onClick={() => setShow(!show)}>{items.content}</span>
-              <br />
+              </div>
             {/* </Link> */}
             <ul style={{ display: show ? "block" : "none", paddingLeft: show ? "30px" : "0px" }}>
               {items?.menu?.items?.map((elem: any, index: number) => (

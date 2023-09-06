@@ -13,6 +13,30 @@
   }
 }
 
+.topHeader {
+  background-color: #f5f5f5;
+}
+.topHeader ul.ui-menu {
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+.topHeader .ui-menu__itemwrapper {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}
+.topHeader .ui-menu__itemwrapper a:hover {
+  color: #0d1187;
+}
+.topHeader .ui-menu__itemwrapper a {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+.ui-menu__itemcontent {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
 .leftConfigContainer {
   display: grid;
   grid-template-columns: 300px auto;
@@ -31,7 +55,7 @@
 .configNavMain-head h2 {
   font-size: 20px;
   margin: 0;
-  color: #000;
+  color: #0d1187;
   text-align: left;
 }
 
@@ -40,7 +64,7 @@
   padding: 20px;
 }
 
-.flex{
+.flex {
   display: flex;
   gap: 40px;
 }
@@ -52,7 +76,7 @@
 .mainTempContainer-head h3 {
   font-size: 20px;
   margin: 0 0 5px;
-  color: #000;
+  color: #0d1187;
 }
 
 .mainTempContainer-head span {
@@ -120,9 +144,9 @@
   margin-left: 30px;
 }
 .settingMegaMenu a > ul a > ul {
-margin-left: 30px;
+  margin-left: 30px;
 }
-.settingMegaMenu>li:first-child {
+.settingMegaMenu > li:first-child {
   display: none;
 }
 
@@ -132,9 +156,13 @@ margin-left: 30px;
   line-height: 20px;
   font-weight: 600;
   color: #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.settingMegaMenu li a{
+.settingMegaMenu li a {
   list-style-type: none;
   font-size: 14px;
   line-height: 20px;
@@ -150,4 +178,8 @@ margin-left: 30px;
 .settingMegaMenu li .ui-icon svg {
   height: 25px;
   width: 25px;
+}
+
+.mainTempContainer > .ui-box > .flex > .ui-button {
+  background-color: #0d1187;
 }

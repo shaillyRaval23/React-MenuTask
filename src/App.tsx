@@ -137,7 +137,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar data={data} />
+      <div className="topHeader"><Navbar data={data} /></div>
 
       <Routes>
         <Route
