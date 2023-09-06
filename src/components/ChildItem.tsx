@@ -9,10 +9,10 @@ export const ChildItem = ({ items }: any) => {
         <li>
           <div>
               {show ? <TriangleDownIcon /> : <TriangleEndIcon />}
-              {items.content}
+              <span onClick={() => setShow(!show)}>{items.content}</span>
               <br />
             {/* </Link> */}
-            <ul style={{ display: show ? "block" : "none", paddingLeft: "30px" }}>
+            <ul style={{ display: show ? "block" : "none", paddingLeft: show ? "30px" : "0px" }}>
               {items?.menu?.items?.map((elem: any, index: number) => (
                 <React.Fragment key={index}>
                   <ChildItem  items={elem} />

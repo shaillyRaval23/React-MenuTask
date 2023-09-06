@@ -47,6 +47,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
         on: "hover",
         id: "2",
       });
+      setSearch("")
       setSuccess(true)
       setData(dummyArr);
     } else {
@@ -110,6 +111,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
               type="text"
               placeholder="Enter menu child..."
               onChange={(e: any) => setSearch(e.target.value)}
+              value={search}
             />
             <Button
               loader="Bypass firewall"
@@ -135,7 +137,10 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
                 loader="Bypass firewall"
                 primary
                 icon={<AddIcon />}
-                onClick={() => setShow(true)}
+                onClick={() => {
+                  setShow(true)
+                  setSearch("")
+                }}
                 iconPosition="after"
               />
               <div className="mainSearchInput">
