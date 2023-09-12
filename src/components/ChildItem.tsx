@@ -9,7 +9,7 @@ export const ChildItem = ({ items }: any) => {
         <li>
           <div style={{display: 'flex', flexDirection: "column", alignItems: 'flex-start', justifyContent: 'center'}}>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', cursor: "pointer"}}>
-              {show ? <span style={{color: "#0d1187"}}><TriangleDownIcon /></span> : <span style={{color: "#0d1187"}}><TriangleEndIcon /></span>}
+              {/* {show ? <span style={{color: "#0d1187"}}><TriangleDownIcon /></span> : <span style={{color: "#0d1187"}}><TriangleEndIcon /></span>} */}
               <span onClick={() => setShow(!show)}>{items.content}</span>
               </div>
             {/* </Link> */}
@@ -26,7 +26,7 @@ export const ChildItem = ({ items }: any) => {
     }
   
     return (
-      <li style={{ minHeight: "25px", paddingLeft: "25px" }}>
+      <li>
         <Link to={`/${items.content}`} target="_blank" onClick={() => setShow(!show)}>
           {items.content}
         </Link>

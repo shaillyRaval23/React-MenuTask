@@ -9,6 +9,7 @@ import {
 } from "@fluentui/react-northstar";
 import { useCallback, useEffect, useState } from "react";
 import { ChildItem } from "./ChildItem";
+import { InfoIcon } from "@fluentui/react-northstar";
 
 const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) => {
   const [search, setSearch] = useState("");
@@ -85,9 +86,12 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
         success &&
         <div
           style={{
-            border: "1px solid lightgray"
+            backgroundColor:"#f1dc86",
+            padding:"5px 20px",
+            borderRadius:"3px", display:"flex", alignItems:"center", justifyContent:"flex-start", textAlign:"left"
           }}
         >
+          <InfoIcon style={{marginRight:"5px", color:"#9d7e00"}}/>
           Child Item added successfully
         </div>
       }
@@ -96,13 +100,13 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
         <Text content="The mega menu can be configured here" />
       </Box>
       <Box className="mainTempContainer-subHead">
-        <Header as="h4" content="Add Navigation Entries" />
+        <Header as="h4" content="Add Navigation Entries" style={{marginBottom:"5px", marginTop:"0px"}}/>
         <Text content="Here's an example of how a section can be used as group inputs" />
       </Box>
       <Box>
         <Text>
           <b>Selected Mega Menu Item:</b>
-          <span style={{fontSize:"20px", fontWeight: "600"}}>
+          <span style={{ backgroundColor:"#ccc", borderRadius:"5px", marginLeft:"5px"}}>
             {selectedItem.content &&
               selectedItem?.content}
           </span>
@@ -110,7 +114,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
       </Box>
       <Box>
         {show ? (
-          <div className="mainInput">
+          <div className="mainInput flex" style={{gap:"10px"}}>
             <Input
               type="text"
               placeholder="Enter menu child..."
@@ -135,7 +139,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
           </div>
         ) : (
           <>
-            <div className="flex">
+            <div className="flex" style={{gap:"10px"}}>
               <Button
                 content={"Create new Menu Item"}
                 loader="Bypass firewall"
@@ -145,7 +149,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
                   setShow(true)
                   setSearch("")
                 }}
-                iconPosition="after"
+                iconPosition="before"
               />
               <div className="mainSearchInput">
                 <Input

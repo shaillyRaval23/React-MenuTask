@@ -10,12 +10,12 @@ export const Configurations = ({ selectedItem, setSelectedItem, data, setData }:
         <div className="leftConfigContainer">
           <div className="configNavMain">
             <div className="configNavMain-head">
-              <h2>Configurations</h2>
-              <ul className="settingMegaMenu">
+              <h2>Settings</h2>
+              <ol className="settingMegaMenu">
                 {data?.map((el: any, index: number) => {
                   return <ChildItem items={el} key={index} />;
                 })}
-              </ul>
+              </ol>
             </div>
           </div>
           <MainSection
