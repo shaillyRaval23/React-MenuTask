@@ -1,4 +1,3 @@
-import { Header, Layout, Text } from "@fluentui/react-northstar";
 import MainSection from "./ParentComponent";
 import { ChildItem } from "./ChildItem";
 

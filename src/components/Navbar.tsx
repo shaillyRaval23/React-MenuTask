@@ -1,4 +1,3 @@
-import { Menu } from "@fluentui/react-northstar";
 import { useState } from "react";
 import { MenuIcon, MoreIcon } from "@fluentui/react-northstar";
 
@@ -54,7 +53,7 @@ const Navbar = ({ data }: any) => {
                                           <h3>{subSubMenu?.content}</h3>
                                           <ul>
                                             {
-                                              subSubMenu?.menu?.items?.map((subSubSubMenu: any, inde: number) => {
+                                              subSubMenu?.menu?.items?.map((subSubSubMenu: any, index: number) => {
                                                 return (
                                                   <li>
                                                     <a href={`/${subSubSubMenu?.content}`} target="blank">{subSubSubMenu?.content}</a>

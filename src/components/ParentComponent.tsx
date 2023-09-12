@@ -8,7 +8,6 @@ import {
   Text
 } from "@fluentui/react-northstar";
 import { useCallback, useEffect, useState } from "react";
-import { ChildItem } from "./ChildItem";
 import { InfoIcon } from "@fluentui/react-northstar";
 
 const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) => {
@@ -43,7 +42,7 @@ const ParentComponent = ({ data, setData, selectedItem, setSelectedItem }: any) 
     if (Object.keys(selectedItem).length === 0) {
       let dummyArr = [...data];
       dummyArr.push({
-        key: "adfa",
+        key: "First",
         content: search,
         on: "hover",
         id: "2",

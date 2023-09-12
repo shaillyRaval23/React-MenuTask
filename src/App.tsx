@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
+import React, {  useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { Configurations } from "./components/Configurations";
-import { MenuIcon } from "@fluentui/react-icons-northstar";
+
 
 const dummyData = [
-  // {
-  //   key: "hamBurger",
-  //   icon: <MenuIcon />,
-  // },
   {
     key: "Mega Menu 1",
     content: "MenuItem 1",
@@ -34,7 +29,7 @@ const dummyData = [
                     },
                     {
                       key: "s1.2.2",
-                      content: "Benifits",
+                      content: "Benefits",
                     },
                     {
                       key: "s1.2.3",
@@ -62,7 +57,7 @@ const dummyData = [
                     },
                     {
                       key: "s1.2.2",
-                      content: "Benifits",
+                      content: "Benefits",
                     },
                     {
                       key: "s1.2.3",
@@ -90,7 +85,7 @@ const dummyData = [
                     },
                     {
                       key: "s1.2.2",
-                      content: "Benifits",
+                      content: "Benefits",
                     },
                     {
                       key: "s1.2.3",
@@ -118,7 +113,7 @@ const dummyData = [
                     },
                     {
                       key: "s1.2.2",
-                      content: "Benifits",
+                      content: "Benefits",
                     },
                     {
                       key: "s1.2.3",
@@ -168,7 +163,7 @@ const dummyData = [
                     },
                     {
                       key: "sub2.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -197,7 +192,7 @@ const dummyData = [
                     },
                     {
                       key: "sub2.2.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -226,7 +221,7 @@ const dummyData = [
                     },
                     {
                       key: "sub2.3.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -273,7 +268,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -302,7 +297,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -331,7 +326,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -360,7 +355,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -398,7 +393,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -427,7 +422,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -452,7 +447,7 @@ const dummyData = [
             items: [
               {
                 key: "submenuItem3.2",
-                content: "Hellow world 3",
+                content: "Hello World 3",
                 on: "hover",
                 menu: {
                   items: [
@@ -474,7 +469,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -533,7 +528,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -613,7 +608,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
@@ -706,7 +701,7 @@ const dummyData = [
                     },
                     {
                       key: "sub1.1.5",
-                      content: "Polution",
+                      content: "Pollution",
                     },
                   ],
                 },
